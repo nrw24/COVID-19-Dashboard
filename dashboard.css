@@ -1,0 +1,167 @@
+
+
+/*Table Styling*/
+table#states {
+  width:20%; 
+  margin-left:15%; 
+  margin-right:15%;
+  border: 7px solid black;
+}
+/*Table Header styling*/
+.table_header {
+  background-color: black;
+  color: white;
+  border: 5px solid orange;
+}
+
+/*Table caption styling*/
+.table_caption {
+  font-weight: bold;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+/*Table row styling*/
+.table_row {
+  background-color: darkorange;
+  color: black;
+  border: 3px solid black;
+}
+
+/*Navigation bar styling*/
+ul#navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.nav {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.welcome {
+    text-align: center;
+    background-color: black;
+    padding-block-start: 10px;
+    color: white;
+}
+
+/*Body Styling*/
+body {
+  background:  #859899;
+  height: 100%;
+  width: 100%;
+}
+
+/*CDC cases CSS*/
+.cases-header {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 1200px) {
+    .cases-header {
+      flex-direction: row; } }
+  @media only screen and (min-width: 1200px) {
+    .cases-header {
+      align-items: stretch; } }
+  .cases-header .cases-callouts {
+    background: rgb(1, 20, 17);
+    flex-grow: 1;
+    font-size: .8em;
+    padding: 2em 1em;
+    text-align: right; }
+    @media only screen and (min-width: 768px) {
+      .cases-header .cases-callouts {
+        padding: 2em 2em 1.5em;
+        font-size: 1em; } }
+    @media only screen and (min-width: 1200px) {
+      .cases-header .cases-callouts {
+        margin-right: 1.5em; } }
+    .cases-header .cases-callouts > footer {
+      text-decoration: none;
+      color: rgba(1, 22, 26, 0.8);
+      margin-top: 1em;
+      font-size: .9em; }
+      .cases-header .cases-callouts > footer ul {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between; }
+      .cases-header .cases-callouts > footer a {
+        color: rgba(1, 22, 26, 0.8); }
+    .cases-header .cases-callouts .callouts-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .cases-header .cases-callouts .callouts-container .callout {
+        text-align: center;
+        background: #fff;
+        width: 47%;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        padding: 1em 0; }
+        .cases-header .cases-callouts .callouts-container .callout span.count {
+          display: block;
+          color: #007D91;
+          font-size: 1.7em;
+          font-weight: 500; }
+        .cases-header .cases-callouts .callouts-container .callout span.new-cases {
+          color: rgba(1, 22, 26, 0.8);
+          text-transform: none;
+          display: block;
+          font-size: .7em;
+          font-weight: 500; }
+  .cases-header > a {
+    text-decoration: none;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 2em; }
+    @media only screen and (min-width: 1200px) {
+      .cases-header > a {
+        width: 40%;
+        margin-top: 0; } }
+    .cases-header > a:hover section {
+      transition: 0.2s all;
+      background: rgba(1, 22, 26, 0.8); }
+    .cases-header > a .heading {
+      font-size: 1.3em;
+      font-weight: 600; }
+    .cases-header > a p {
+      margin: 0; }
+    .cases-header > a section {
+      transition: 0.2s all;
+      background: rgba(1, 22, 26, 0.8);
+      color: #fff;
+      padding: 1em 1em 1.3em;
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+
+/*State Tab Styling*/
+.usa_table_countries_div{
+font-size:15.5px;
+text-align:left;
+width:100%;
+    }
+/*Highlighted state*/
+.highlight{
+background-color:white;
+}
