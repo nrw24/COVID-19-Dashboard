@@ -164,23 +164,21 @@ county_data = {}
 document = xml.parse("0,9753,7-406-98163_98173---,00.xhtml")
 
 tables = document.documentElement.getElementsByTagName("table")
-
 #Find country table
 try:
     for table in tables:
         table_captions = table.getElementsByTagName("caption")
-        
         #Filter by caption
         for caption in table_captions:
-            caption = caption.childNodes[0]
-            if "Jurisdiction" in caption.nodeValue:
+            strong = caption.childNodes[0]
+            text = strong.childNodes[0]
+            if "Jurisdiction" in text.nodeValue:
                 
                 #Get data from table rows
                 rows = table.getElementsByTagName("tr")
                 for row in rows:
                     if row.hasAttribute("height"):
                         children = row.childNodes
-                       
                         #Get county, confirmed cases and reported deaths
                         
                         county = children[0].childNodes[0].nodeValue.strip()
@@ -277,5 +275,4 @@ if currentTime >= updateTime:
 
 #CLose connection 
 cursor.close()
-
 
